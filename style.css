@@ -10,10 +10,14 @@ body {
 
 /* Header and Navigation Bar */
 header {
+    position: sticky; /* Makes the header stick to the top */
+    top: 0; /* Ensures it sticks to the very top */
+    z-index: 1000; /* Keeps it above other content */
     background: #0078d4; /* Light blue for better visibility */
     color: white;
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
 }
 
 header h1 {
