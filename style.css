@@ -51,13 +51,15 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
-    padding: 2rem;
+    padding-top: 5rem; /* Adjust this value based on the header height */
+    padding-left: 1rem;
+    padding-right: 1rem;
     max-width: 800px;
     margin: auto;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 h2 {
