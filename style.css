@@ -54,12 +54,14 @@ main {
     padding-top: 5rem; /* Adjust this value based on the header height */
     padding-left: 1rem;
     padding-right: 1rem;
+    scroll-padding-top: 5rem; /* Matches the height of the header */
     max-width: 800px;
     margin: auto;
 }
 
 section {
     margin-bottom: 5rem;
+    position: relative;
 }
 
 h2 {
