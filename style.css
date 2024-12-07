@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,8 +8,9 @@ body {
     line-height: 1.6;
 }
 
+/* Header and Navigation Bar */
 header {
-    background: #333;
+    background: #0078d4; /* Light blue for better visibility */
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -20,28 +22,30 @@ header h1 {
 
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    background: #444;
+    justify-content: center; /* Center align the navigation items */
+    background: #005a9e; /* Slightly darker shade for the nav bar */
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem; /* Adds spacing for a button-like appearance */
     display: block;
     transition: background 0.3s;
 }
 
 nav ul li a:hover {
-    background: #0078d4;
+    background: #003f6b; /* Darker shade on hover */
 }
 
+/* Main Content */
 main {
     padding: 2rem;
     max-width: 800px;
@@ -58,6 +62,7 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
+/* Hyperlinks */
 a {
     color: #0078d4;
     text-decoration: none;
@@ -67,6 +72,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     text-align: center;
     margin-top: 2rem;
