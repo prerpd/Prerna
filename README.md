@@ -1,2 +1,2 @@
-# prerpd.github.io-prerna
+# prerpd.github.io
 My personal website
