@@ -59,6 +59,36 @@ main {
     margin: auto;
 }
 
+/* Profile Photo */
+.profile-photo {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    width: 150px; /* Adjust the size of the photo */
+    height: 150px;
+    border-radius: 50%; /* Makes the photo circular */
+    border: 3px solid #0078d4; /* Add a border for a clean look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 1rem;
+    text-align: center; /* Center the links */
+}
+
+.social-links a {
+    margin: 0 1rem; /* Add spacing between links */
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.social-links a:hover {
+    color: #005a9e;
+    text-decoration: underline;
+}
+
 section {
     margin-bottom: 5rem;
     position: relative;
