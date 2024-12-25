@@ -64,10 +64,11 @@ main {
     display: block;
     margin: 0 auto; /* Center the image */
     width: 150px; /* Adjust the size of the photo */
-    height: 150px;
+    height: 250px;
     border-radius: 50%; /* Makes the photo circular */
     border: 3px solid #0078d4; /* Add a border for a clean look */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    object-fit: cover; /* Ensures the photo fits perfectly in the rectangular box */
 }
 
 /* Social Links */
