@@ -3,21 +3,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f9;
+    background: #C7D9DD; /* Light, airy blue for the background */
     color: #333;
     line-height: 1.6;
 }
 
 /* Header and Navigation Bar */
 header {
-    position: sticky; /* Makes the header stick to the top */
-    top: 0; /* Ensures it sticks to the very top */
-    z-index: 1000; /* Keeps it above other content */
-    background: #0078d4; /* Light blue for better visibility */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ADB2D4; /* Muted blue-purple for the header */
     color: white;
     padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -29,8 +29,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center align the navigation items */
-    background: #005a9e; /* Slightly darker shade for the nav bar */
+    justify-content: center;
+    background: #005a9e; /* Keeping a darker blue for contrast in the nav bar */
 }
 
 nav ul li {
@@ -40,7 +40,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 1rem 2rem; /* Adds spacing for a button-like appearance */
+    padding: 1rem 2rem;
     display: block;
     transition: background 0.3s;
 }
@@ -51,37 +51,43 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
-    padding-top: 5rem; /* Adjust this value based on the header height */
+    padding-top: 5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    scroll-padding-top: 5rem; /* Matches the height of the header */
+    scroll-padding-top: 5rem;
     max-width: 800px;
     margin: auto;
+    background: #EEF1DA; /* Pale yellow for the main content area */
+    padding-bottom: 2rem; /* Add some padding at the bottom */
+    border-radius: 8px; /* Optional: Add rounded corners for a softer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Optional: Subtle shadow for depth */
 }
 
 /* Profile Photo */
 .profile-photo {
     display: block;
-    margin: 0 auto; /* Center the image */
-    width: 150px; /* Adjust the size of the photo */
+    margin: 1rem auto; /* Add some top margin */
+    width: 150px;
     height: 250px;
-    border: 3px solid #0078d4; /* Add a border for a clean look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    object-fit: cover; /* Ensures the photo fits perfectly in the rectangular box */
+    border: 3px solid #ADB2D4; /* Muted blue-purple border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    border-radius: 8px; /* Optional: Rounded corners for the photo */
 }
 
 /* Social Links */
 .social-links {
     margin-top: 1rem;
-    text-align: center; /* Center the links */
+    text-align: center;
 }
 
 .social-links a {
-    margin: 0 1rem; /* Add spacing between links */
-    color: #0078d4;
+    margin: 0 1rem;
+    color: #ADB2D4; /* Muted blue-purple for the links */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
+    transition: color 0.3s;
 }
 
 .social-links a:hover {
@@ -92,21 +98,27 @@ main {
 section {
     margin-bottom: 5rem;
     position: relative;
+    padding: 1.5rem; /* Add some padding to the sections */
+    background: white; /* White background for content blocks */
+    border-radius: 6px; /* Optional: Rounded corners for sections */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Optional: Subtle shadow for sections */
 }
 
 h2 {
-    color: #0078d4;
-    border-bottom: 2px solid #0078d4;
+    color: #ADB2D4; /* Muted blue-purple for headings */
+    border-bottom: 2px solid #ADB2D4;
     padding-bottom: 0.5rem;
 }
 
 /* Hyperlinks */
 a {
-    color: #0078d4;
+    color: #0078d4; /* Keeping the original blue for general links for now */
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 a:hover {
+    color: #005a9e;
     text-decoration: underline;
 }
 
@@ -114,6 +126,9 @@ a:hover {
 footer {
     text-align: center;
     margin-top: 2rem;
+    padding: 1rem 0; /* Add some padding to the footer */
     font-size: 0.9rem;
     color: #666;
+    background: #D5E5D5; /* Very light green for the footer */
+    border-radius: 8px 8px 0 0; /* Optional: Rounded top corners */
 }
