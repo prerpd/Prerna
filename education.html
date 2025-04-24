@@ -3,8 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prerna's Portfolio - Recent Updates</title>
+    <title>Prerna's Portfolio - Education</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles for the tabs */
+        .tab-container {
+            margin-top: 1rem;
+        }
+
+        .tab-buttons {
+            display: flex;
+            border-bottom: 2px solid #ADB2D4;
+        }
+
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            background: #f4f4f9;
+            border: none;
+            border-bottom: none;
+            color: #333;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .tab-button.active {
+            background: white;
+            border-bottom: 2px solid #0078d4;
+            color: #0078d4;
+        }
+
+        .tab-button:hover {
+            background: #e0e0e0;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 0 0 6px 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .course-list {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+        }
+
+        .course-list li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,15 +78,72 @@
     <main>
         <section id="education">
             <h2>Education</h2>
-            <ul>
-                <li><strong>University of Minnesota</strong> (PhD, Chemical Engineering; MS, Computer Science, GPA: 3.85/4.00)</li>
-                <li><strong>IIT Kanpur</strong> (MTech, Chemical Engineering, GPA: 9.67/10.00)</li>
-                <li><strong>BIT Mesra</strong> (BE, Chemical Engineering, GPA: 8.6/10.00)</li>
-            </ul>
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active" onclick="openTab('umn')">University of Minnesota</button>
+                    <button class="tab-button" onclick="openTab('iitk')">IIT Kanpur</button>
+                    <button class="tab-button" onclick="openTab('bitm')">BIT Mesra</button>
+                </div>
+                <div id="umn" class="tab-content active">
+                    <h3>University of Minnesota Twin Cities</h3>
+                    <p>(PhD, Chemical Engineering; MS, Computer Science, GPA: 3.85/4.00)</p>
+                    <h4>Relevant Courses:</h4>
+                    <ul class="course-list">
+                        <li>Computational Chemistry</li>
+                        <li>Statistical Thermodynamics</li>
+                        <li>Deep Learning</li>
+                        <li>Advanced Machine Learning</li>
+                        <li>Data Mining</li>
+                        <li>Algorithms and Data Structures</li>
+                        <li>Quantum Computing</li>
+                    </ul>
+                </div>
+                <div id="iitk" class="tab-content">
+                    <h3>Indian Institute of Techonology, Kanpur</h3>
+                    <p>(MTech, Chemical Engineering, GPA: 9.67/10.00)</p>
+                    <h4>Relevant Courses:</h4>
+                    <ul class="course-list">
+                        <li>Molecular Modeling in Chemistry</li>
+                        <li>Transport Phenomena</li>
+                        <li>Reaction Engineering</li>
+                        <li>Mathematical Methods in Chemical Engineering</li>
+                    </ul>
+                </div>
+                <div id="bitm" class="tab-content">
+                    <h3>Birla Institute of Technology, Mesra</h3>
+                    <p>(BE, Chemical Engineering, GPA: 8.6/10.00)</p>
+                    <h4>Relevant Courses:</h4>
+                    <ul class="course-list">
+                        <li>Fluid Mechanics</li>
+                        <li>Heat Transfer</li>
+                        <li>Mass Transfer</li>
+                        <li>Process Modeling, Simulation and Optimization</li>
+                        <li>Process Control</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>© 2024 Prerna</p>
     </footer>
+
+    <script>
+        function openTab(tabId) {
+            const tabContents = document.querySelectorAll('.tab-content');
+            const tabButtons = document.querySelectorAll('.tab-button');
+
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            tabButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            document.getElementById(tabId).classList.add('active');
+            document.querySelector(`.tab-button[onclick="openTab('${tabId}')"]`).classList.add('active');
+        }
+    </script>
 </body>
 </html>
