@@ -30,7 +30,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background: #005a9e; /* Keeping a darker blue for contrast in the nav bar */
+    background: #9AA1C9; /* Darker shade of #ADB2D4 */
 }
 
 nav ul li {
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #003f6b; /* Darker shade on hover */
+    background: #888EA8; /* Even darker shade for hover */
 }
 
 /* Main Content */
