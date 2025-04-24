@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #C7D9DD; /* Light, airy blue for the background */
+    background: #C7D9DD;
     color: #333;
     line-height: 1.6;
 }
@@ -13,11 +13,11 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #ADB2D4; /* Muted blue-purple for the header */
+    background: #ADB2D4;
     color: white;
     padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* More defined shadow */
 }
 
 header h1 {
@@ -30,7 +30,8 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background: #9AA1C9; /* Darker shade of #ADB2D4 */
+    background: #7886C7; /*#9AA1C9*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
 }
 
 nav ul li {
@@ -46,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #888EA8; /* Even darker shade for hover */
+    background: #888EA8;
 }
 
 /* Main Content */
@@ -57,22 +58,22 @@ main {
     scroll-padding-top: 5rem;
     max-width: 800px;
     margin: auto;
-    background: #EEF1DA; /* Pale yellow for the main content area */
-    padding-bottom: 2rem; /* Add some padding at the bottom */
-    border-radius: 8px; /* Optional: Add rounded corners for a softer look */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Optional: Subtle shadow for depth */
+    background: #EEF1DA;
+    padding-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* More prominent shadow */
 }
 
 /* Profile Photo */
 .profile-photo {
     display: block;
-    margin: 1rem auto; /* Add some top margin */
+    margin: 1rem auto;
     width: 150px;
     height: 250px;
-    border: 3px solid #ADB2D4; /* Muted blue-purple border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ADB2D4;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Stronger shadow to lift the photo */
     object-fit: cover;
-    border-radius: 8px; /* Optional: Rounded corners for the photo */
+    border-radius: 8px;
 }
 
 /* Social Links */
@@ -83,7 +84,7 @@ main {
 
 .social-links a {
     margin: 0 1rem;
-    color: #ADB2D4; /* Muted blue-purple for the links */
+    color: #ADB2D4;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
@@ -98,27 +99,27 @@ main {
 section {
     margin-bottom: 5rem;
     position: relative;
-    padding: 1.5rem; /* Add some padding to the sections */
-    background: white; /* White background for content blocks */
-    border-radius: 6px; /* Optional: Rounded corners for sections */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Optional: Subtle shadow for sections */
+    padding: 1.5rem;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Subtle shadow for sections */
 }
 
 h2 {
-    color: #ADB2D4; /* Muted blue-purple for headings */
+    color: #ADB2D4;
     border-bottom: 2px solid #ADB2D4;
     padding-bottom: 0.5rem;
 }
 
 /* Hyperlinks */
 a {
-    color: #0078d4; /* Keeping the original blue for general links for now */
+    color: #C7D9DD;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #005a9e;
+    color: #C7D9DD;
     text-decoration: underline;
 }
 
@@ -126,9 +127,10 @@ a:hover {
 footer {
     text-align: center;
     margin-top: 2rem;
-    padding: 1rem 0; /* Add some padding to the footer */
+    padding: 1rem 0;
     font-size: 0.9rem;
     color: #666;
-    background: #D5E5D5; /* Very light green for the footer */
-    border-radius: 8px 8px 0 0; /* Optional: Rounded top corners */
+    background: #D5E5D5;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05); /* Subtle top shadow for definition */
 }
