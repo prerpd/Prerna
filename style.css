@@ -3,12 +3,15 @@
 /* https://colorhunt.co/palette/adb2d4c7d9ddd5e5d5eef1da*/
 /* https://colorhunt.co/ */
 
+/* color codes used */
+/* https://colorhunt.co/palette/413c694a47a3709fb0a7c5eb */
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #C7D9DD;
+    background: #A7C5EB; /* Lightest blue for the body background */
     color: #333;
     line-height: 1.6;
 }
@@ -18,7 +21,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #ADB2D4;
+    background: #4A47A3; /* Vibrant blue-purple for the header */
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -35,7 +38,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background: #7886C7; /*#9AA1C9*/
+    background: #413C69; /* Dark purple/blue for the navigation bar */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
 }
 
@@ -52,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #888EA8;
+    background: #363158; /* Even darker shade for hover effect */
 }
 
 /* Main Content */
@@ -63,7 +66,7 @@ main {
     scroll-padding-top: 5rem;
     max-width: 800px;
     margin: auto;
-    background: #EEF1DA;
+    background: #709FB0; /* Medium blue for the main content area */
     padding-bottom: 2rem;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* More prominent shadow */
@@ -75,7 +78,7 @@ main {
     margin: 1rem auto;
     width: 150px;
     height: 250px;
-    border: 3px solid #ADB2D4;
+    border: 3px solid #4A47A3; /* Border color consistent with header */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Stronger shadow to lift the photo */
     object-fit: cover;
     border-radius: 8px;
@@ -89,7 +92,7 @@ main {
 
 .social-links a {
     margin: 0 1rem;
-    color: #ADB2D4;
+    color: #4A47A3; /* Consistent with primary accent color */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
@@ -97,7 +100,7 @@ main {
 }
 
 .social-links a:hover {
-    color: #005a9e;
+    color: #3C3982; /* Darker shade for hover */
     text-decoration: underline;
 }
 
@@ -105,26 +108,26 @@ section {
     margin-bottom: 5rem;
     position: relative;
     padding: 1.5rem;
-    background: white;
+    background: white; /* Keeping sections white to stand out on the main background */
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Subtle shadow for sections */
 }
 
 h2 {
-    color: #ADB2D4;
-    border-bottom: 2px solid #ADB2D4;
+    color: #4A47A3; /* Heading color consistent with primary accent */
+    border-bottom: 2px solid #4A47A3;
     padding-bottom: 0.5rem;
 }
 
 /* Hyperlinks */
 a {
-    color: #C7D9DD;
+    color: #4A47A3; /* Main hyperlink color consistent with primary accent */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #C7D9DD;
+    color: #3C3982; /* Darker shade for hover */
     text-decoration: underline;
 }
 
@@ -135,7 +138,7 @@ footer {
     padding: 1rem 0;
     font-size: 0.9rem;
     color: #666;
-    background: #D5E5D5;
+    background: #4A47A3; /* Footer background consistent with header for framing */
     border-radius: 8px 8px 0 0;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05); /* Subtle top shadow for definition */
 }
