@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prerna's Portfolio - Experience</title>
+    <title>Prerna's Portfolio - Education</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Styles for the tabs (reused from education page) */
+        /* Styles for the tabs */
         .tab-container {
             margin-top: 1rem;
         }
@@ -50,20 +50,18 @@
             display: block;
         }
 
-        .experience-duration {
-            font-style: italic;
-            color: #666; /* You can update this to a palette color like #413C69 if you prefer */
-            margin-bottom: 0.5rem;
-        }
-
-        .experience-details {
+        .course-list, .additional-info-list { /* Combined styles for bullet points */
             list-style-type: disc;
             margin-left: 1.5rem;
-            margin-top: 1rem;
+            margin-top: 0.5rem; /* Add some space above the list */
         }
 
-        .experience-details li {
+        .course-list li, .additional-info-list li {
             margin-bottom: 0.5rem;
+        }
+
+        .additional-info-heading {
+            margin-top: 1.5rem; /* Space above the new heading */
         }
     </style>
 </head>
@@ -84,38 +82,62 @@
         </nav>
     </header>
     <main>
-        <section id="experience">
-            <h2>Experience</h2>
+        <section id="education">
+            <h2>Education</h2>
             <div class="tab-container">
                 <div class="tab-buttons">
-                    <button class="tab-button active" onclick="openTab('umn-exp')">PhD Thesis</button>
-                    <button class="tab-button" onclick="openTab('iitk-exp')">Research Assistant</button>
-                    <button class="tab-button" onclick="openTab('sterlite-exp')">Associate Manager, Sterlite Tech</button>
+                    <button class="tab-button active" onclick="openTab('umn')">Ph.D.</button>
+                    <button class="tab-button" onclick="openTab('iitk')">M.Tech.</button>
+                    <button class="tab-button" onclick="openTab('bitm')">B.E.</button>
                 </div>
-                <div id="umn-exp" class="tab-content active">
-                    <h3>PhD Candidate, University of Minnesota Twin Cities</h3>
-                    <p class="experience-duration">Expected Graduation: May 2026</p>
-                    <ul class="experience-details">
-                        <li>Developed workflow to model cyclic natural gas storage in nanoporous materials using Gibbs ensemble Monte Carlo simulations and studied the trace compounds enrichment in zeolites</li>
-                        <li>Designed and implemented a stochastic and divide-and-conquer-based workflow to study 7-component gas mixture, achieving enhanced precision for trace components and 50 folds computation time speed up</li>
-                        <li>Modeled innovative zeolitic membranes for effective ammonia from nitrogen and hydrogen blend at high temperatures and pressures, automated GEMC workflow reduced setup time over 30 hours per project cycle</li>
-                        <li>Collaborated with a cross-functional team to obtain the infrared (IR) spectra of metal-organic framework (MOF) with density functional theory (DFT) simulations and validated results with experimental data</li>
-                        <li>Quantified stability of IZA zeolite database based on structure energy and structure optimization using DFT</li>
-                        <li>Impact: Accelerating material discovery with data-driven techniques for sustainable industrial applications</li>
+                <div id="umn" class="tab-content active">
+                    <h3>University of Minnesota Twin Cities</h3>
+                    <p>(Ph.D., Chemical Engineering; MS, Computer Science, GPA: 3.85/4.00)</p>
+                    <p>August 2021 - June 2026</p>
+                    <h4>Relevant Courses:</h4>
+                    <ul class="course-list">
+                        <li>Computational Chemistry</li>
+                        <li>Statistical Thermodynamics</li>
+                        <li>Deep Learning</li>
+                        <li>Advanced Machine Learning</li>
+                        <li>Data Mining</li>
+                        <li>Algorithms and Data Structures</li>
+                        <li>Quantum Computing</li>
+                    </ul>
+                    <h4 class="additional-info-heading">Research & Achievements:</h4> <ul class="additional-info-list"> <li>Developed novel computational models for material design.</li>
+                        <li>Awarded departmental scholarship for outstanding academic performance.</li>
+                        <li>Presented research findings at national conferences.</li>
                     </ul>
                 </div>
-                <div id="iitk-exp" class="tab-content">
-                    <h3>Research Assistant, IIT Kanpur</h3>
-                    <p class="experience-duration">June 2020 - June 2021</p>
-                    <ul class="experience-details">
-                        <li>Developed a Python package for MOF preprocessing and structural analysis.</li>
+                <div id="iitk" class="tab-content">
+                    <h3>Indian Institute of Techonology, Kanpur</h3>
+                    <p>(M.Tech., Chemical Engineering, GPA: 9.67/10.00)</p>
+                    <p>August 2019</p>
+                    <h4>Relevant Courses:</h4>
+                    <ul class="course-list">
+                        <li>Molecular Modeling in Chemistry</li>
+                        <li>Transport Phenomena</li>
+                        <li>Reaction Engineering</li>
+                        <li>Mathematical Methods in Chemical Engineering</li>
+                    </ul>
+                    <h4 class="additional-info-heading">Projects & Recognition:</h4> <ul class="additional-info-list"> <li>Developed a Python package for MOF preprocessing and structural analysis.</li>
+                        <li>Received "Best Master's Thesis" award.</li>
                     </ul>
                 </div>
-                <div id="sterlite-exp" class="tab-content">
-                    <h3>Associate Manager, Sterlite Tech</h3>
-                    <p class="experience-duration">August 2019 - August 2021</p>
-                    <ul class="experience-details">
-                        <li>Designed optimized glass production recipes using machine learning.</li>
+                <div id="bitm" class="tab-content">
+                    <h3>Birla Institute of Technology, Mesra</h3>
+                    <p>(B.E., Chemical Engineering, GPA: 8.6/10.00)</p>
+                    <p>August 2017</p>
+                    <h4>Relevant Courses:</h4>
+                    <ul class="course-list">
+                        <li>Fluid Mechanics</li>
+                        <li>Heat Transfer</li>
+                        <li>Mass Transfer</li>
+                        <li>Process Modeling, Simulation and Optimization</li>
+                        <li>Process Control</li>
+                    </ul>
+                    <h4 class="additional-info-heading">Key Learnings:</h4> <ul class="additional-info-list"> <li>Gained foundational knowledge in chemical engineering principles.</li>
+                        <li>Participated in various engineering society events.</li>
                     </ul>
                 </div>
             </div>
