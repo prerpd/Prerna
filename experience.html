@@ -13,28 +13,29 @@
 
         .tab-buttons {
             display: flex;
-            border-bottom: 2px solid #ADB2D4;
+            border-bottom: 2px solid #4A47A3; /* Updated: Accent color for the bottom border */
         }
 
         .tab-button {
             padding: 0.75rem 1.5rem;
             cursor: pointer;
-            background: #f4f4f9;
+            background: #A7C5EB; /* Updated: Light blue for inactive tab buttons */
             border: none;
             border-bottom: none;
-            color: #333;
+            color: #413C69; /* Updated: Dark purple/blue for inactive tab text */
             font-weight: bold;
-            transition: background 0.3s ease;
+            transition: background 0.3s ease, color 0.3s ease; /* Added color transition */
         }
 
         .tab-button.active {
-            background: white;
-            border-bottom: 2px solid #7886C7;
-            color: #7886C7;
+            background: white; /* Active tab content background */
+            border-bottom: 2px solid #4A47A3; /* Updated: Accent color for active tab underline */
+            color: #4A47A3; /* Updated: Accent color for active tab text */
         }
 
         .tab-button:hover {
-            background: #e0e0e0;
+            background: #709FB0; /* Updated: Medium blue for hover effect */
+            color: white; /* White text on hover for better contrast */
         }
 
         .tab-content {
@@ -47,6 +48,12 @@
 
         .tab-content.active {
             display: block;
+        }
+
+        .experience-duration {
+            font-style: italic;
+            color: #666; /* You can update this to a palette color like #413C69 if you prefer */
+            margin-bottom: 0.5rem;
         }
 
         .experience-details {
@@ -105,8 +112,8 @@
                     </ul>
                 </div>
                 <div id="sterlite-exp" class="tab-content">
-                    <p class="experience-duration">August 2019 - August 2021</p>
                     <h3>Associate Manager, Sterlite Tech</h3>
+                    <p class="experience-duration">August 2019 - August 2021</p>
                     <ul class="experience-details">
                         <li>Designed optimized glass production recipes using machine learning.</li>
                     </ul>
