@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prerna's Portfolio - Bio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,12 +24,54 @@
         </nav>
     </header>
     <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Partial Atomic Charge Prediction:</strong> Built a Python model using graph convolutional networks for MOF simulations.</li>
-                <li><strong>Liquid–Liquid Equilibria Prediction:</strong> Developed and validated predictive models using optimization algorithms.</li>
-            </ul>
+        <section id="projects-container">
+            <h2>Technical Projects</h2>
+        
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Partial Atomic Charge Prediction</h3>
+                    </div>
+                    <p class="project-meta">University of Minnesota | Deep Learning Project</p>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Tool development to expedite materials discovery.
+                    </div>
+                    <ul class="project-details">
+                        <li>Employed <strong>Topology Adaptive Graph Convolutional Network</strong> based Python model to
+                            predict partial charges in MOFs.</li>
+                        <li>Refined model to <strong>ARMAConv</strong> (Auto-Regressive Moving Average) to improve
+                            transferability across different crystal structures.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>PyTorch</span>
+                        <span>GCN</span>
+                        <span>MOFs</span>
+                    </div>
+                </div>
+        
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-vial"></i>
+                        <h3>Liquid–Liquid Equilibria Prediction</h3>
+                    </div>
+                    <p class="project-meta">IIT-Guwahati | Summer Internship</p>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Model implementation and analysis for industrial process design.
+                    </div>
+                    <ul class="project-details">
+                        <li>Model development and validation to predict LLE using <strong>PC-SAFT</strong> equation of state.
+                        </li>
+                        <li>Evaluated optimization algorithms including <strong>Cuckoo Search</strong>, Particle Swarm, and
+                            Genetic Algorithms.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>MATLAB/Python</span>
+                        <span>Optimization</span>
+                        <span>Thermodynamics</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

@@ -5,66 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prerna's Portfolio - Education</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> <link rel="stylesheet" href="style.css">
-    /* <link rel="stylesheet" href="style.css"> */
-    <style>
-        /* Styles for the tabs */
-        .tab-container {
-            margin-top: 1rem;
-        }
-
-        .tab-buttons {
-            display: flex;
-            border-bottom: 2px solid #4A47A3; /* Updated: Accent color for the bottom border */
-        }
-
-        .tab-button {
-            padding: 0.75rem 1.5rem;
-            cursor: pointer;
-            background: #A7C5EB; /* Updated: Light blue for inactive tab buttons */
-            border: none;
-            border-bottom: none;
-            color: #413C69; /* Updated: Dark purple/blue for inactive tab text */
-            font-weight: bold;
-            transition: background 0.3s ease, color 0.3s ease; /* Added color transition */
-        }
-
-        .tab-button.active {
-            background: white; /* Active tab content background */
-            border-bottom: 2px solid #4A47A3; /* Updated: Accent color for active tab underline */
-            color: #4A47A3; /* Updated: Accent color for active tab text */
-        }
-
-        .tab-button:hover {
-            background: #709FB0; /* Updated: Medium blue for hover effect */
-            color: white; /* White text on hover for better contrast */
-        }
-
-        .tab-content {
-            display: none;
-            padding: 1.5rem;
-            background: white;
-            border-radius: 0 0 6px 6px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        .course-list, .additional-info-list { /* Combined styles for bullet points */
-            list-style-type: disc;
-            margin-left: 1.5rem;
-            margin-top: 0.5rem; /* Add some space above the list */
-        }
-
-        .course-list li, .additional-info-list li {
-            margin-bottom: 0.5rem;
-        }
-
-        .additional-info-heading {
-            margin-top: 1.5rem; /* Space above the new heading */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -85,65 +26,112 @@
     <main>
         <section id="education">
             <h2>Education</h2>
-            <div class="tab-container">
-                <div class="tab-buttons">
-                    <button class="tab-button active" onclick="openTab('umn')">Ph.D.</button>
-                    <button class="tab-button" onclick="openTab('iitk')">M.Tech.</button>
-                    <button class="tab-button" onclick="openTab('bitm')">B.E.</button>
+            <div class="education-tabs">
+                <button class="tab-btn active" onclick="openUni(event, 'UMN')">UMN</button>
+                <button class="tab-btn" onclick="openUni(event, 'IITK')">IIT Kanpur</button>
+                <button class="tab-btn" onclick="openUni(event, 'BITM')">BIT Mesra</button>
+            </div>
+            
+            <div id="UMN" class="uni-content" style="display:block;">
+                <div class="uni-header">
+                    <h3>University of Minnesota (Twin Cities)</h3>
+                    <span class="location">Minneapolis, MN</span>
                 </div>
-                <div id="umn" class="tab-content active">
-                    <h3>University of Minnesota Twin Cities</h3>
-                    <p>(Ph.D., Chemical Engineering; MS, Computer Science, GPA: 3.85/4.00)</p>
-                    <p>August 2021 - June 2026</p>
-                    <h4>Relevant Courses:</h4>
+            
+                <div class="degree-box">
+                    <div class="degree-main">
+                        <h4>PhD in Chemical Engineering</h4>
+                        <span class="date">Aug 2021 – Fall 2026 (Expected)</span>
+                    </div>
+                    <div class="degree-main">
+                        <h4>MS in Computer Science</h4>
+                        <span class="date">May 2024</span>
+                    </div>
+                    <p class="gpa"><strong>Cumulative GPA:</strong> 3.85 / 4.00</p>
+                </div>
+            
+                <div class="coursework-section">
+                    <h5>Relevant Coursework</h5>
                     <ul class="course-list">
-                        <li>Computational Chemistry</li>
-                        <li>Statistical Thermodynamics</li>
-                        <li>Deep Learning</li>
-                        <li>Advanced Machine Learning</li>
+                        <li>Computational Chemistry & Statistical Thermodynamics</li>
+                        <li>Deep Learning & Advanced Machine Learning</li>
+                        <li>AI-Driven Science on Supercomputers</li>
+                        <li>Applied Math</li>
+                        <li>Algorithms & Data Structures</li>
                         <li>Data Mining</li>
-                        <li>Algorithms and Data Structures</li>
                         <li>Quantum Computing</li>
                     </ul>
-                    <h4 class="additional-info-heading">Research & Achievements:</h4> <ul class="additional-info-list"> <li>Developed novel computational models for material design.</li>
-                        <li>Awarded departmental scholarship for outstanding academic performance.</li>
-                        <li>Presented research findings at national conferences.</li>
-                    </ul>
                 </div>
-                <div id="iitk" class="tab-content">
-                    <h3>Indian Institute of Techonology, Kanpur</h3>
-                    <p>(M.Tech., Chemical Engineering, GPA: 9.67/10.00)</p>
-                    <p>August 2019</p>
-                    <h4>Relevant Courses:</h4>
+            </div>
+            
+            <div id="IITK" class="uni-content">
+                <div class="uni-header">
+                    <h3>Indian Institute of Technology, Kanpur</h3>
+                    <span class="location">India</span>
+                </div>
+            
+                <div class="degree-box">
+                    <div class="degree-main">
+                        <h4>M.Tech in Chemical Engineering</h4>
+                        <span class="date">Aug 2017 – Aug 2019</span>
+                    </div>
+                    <p class="gpa"><strong>GPA:</strong> 9.67 / 10.00 (Top 10% Academic Excellence Award)</p>
+                </div>
+            
+                <div class="coursework-section">
+                    <h5>Relevant Coursework</h5>
                     <ul class="course-list">
-                        <li>Molecular Modeling in Chemistry</li>
-                        <li>Transport Phenomena</li>
-                        <li>Reaction Engineering</li>
+                        <li>Advanced Transport Phenomena</li>
                         <li>Mathematical Methods in Chemical Engineering</li>
-                    </ul>
-                    <h4 class="additional-info-heading">Projects & Recognition:</h4> <ul class="additional-info-list"> <li>Developed a Python package for MOF preprocessing and structural analysis.</li>
-                        <li>Received "Best Master's Thesis" award.</li>
+                        <li>Molecular Modeling in Chemistry</li>
                     </ul>
                 </div>
-                <div id="bitm" class="tab-content">
+            </div>
+            
+            <div id="BITM" class="uni-content">
+                <div class="uni-header">
                     <h3>Birla Institute of Technology, Mesra</h3>
-                    <p>(B.E., Chemical Engineering, GPA: 8.6/10.00)</p>
-                    <p>August 2017</p>
-                    <h4>Relevant Courses:</h4>
+                    <span class="location">India</span>
+                </div>
+            
+                <div class="degree-box">
+                    <div class="degree-main">
+                        <h4>B.E. in Chemical Engineering</h4>
+                        <span class="date">Aug 2013 – Aug 2017</span>
+                    </div>
+                    <p class="gpa"><strong>GPA:</strong> 8.6 / 10.00</p>
+                </div>
+            
+                <div class="coursework-section">
+                    <h5>Relevant Coursework</h5>
                     <ul class="course-list">
-                        <li>Fluid Mechanics</li>
-                        <li>Heat Transfer</li>
-                        <li>Mass Transfer</li>
                         <li>Process Modeling, Simulation and Optimization</li>
-                        <li>Process Control</li>
-                    </ul>
-                    <h4 class="additional-info-heading">Key Learnings:</h4> <ul class="additional-info-list"> <li>Gained foundational knowledge in chemical engineering principles.</li>
-                        <li>Participated in various engineering society events.</li>
+                        <li>Chemical Reaction Engineering</li>
+                        <li>Heat & Mass Transfer</li>
+                        <li>Process Dynamics & Control</li>
+                        <li>Thermodynamics</li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
+
+    <script>
+        function openUni(evt, uniName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("uni-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(uniName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
     <footer>
         <p>© 2026 Prerna</p>
     </footer>
