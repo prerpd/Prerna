@@ -142,3 +142,161 @@ footer {
     border-radius: 8px 8px 0 0;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05); /* Subtle top shadow for definition */
 }
+
+/* Badge Grid Layout */
+.badge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.badge-item {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.badge-item:hover {
+    transform: translateY(-5px);
+    background-color: #fcfcfc;
+}
+
+.badge-item img {
+    margin-bottom: 10px;
+}
+
+/* Coursework List */
+.course-list {
+    column-count: 2;
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .course-list {
+        column-count: 1;
+    }
+}
+
+/* Publications Section */
+#publications h2 {
+    border-bottom: 2px solid #3776AB;
+    padding-bottom: 10px;
+}
+
+.pub-year-group h3 {
+    margin-top: 40px;
+    color: #555;
+    font-size: 1.4rem;
+}
+
+.pub-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #3776AB;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease;
+}
+
+.pub-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pub-card h4 {
+    margin-top: 0;
+    color: #222;
+    line-height: 1.4;
+}
+
+.pub-card .authors {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.pub-card strong {
+    color: #3776AB;
+    text-decoration: underline;
+}
+
+.pub-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 15px;
+    background-color: #3776AB;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.pub-link:hover {
+    background-color: #2b5d88;
+}
+
+/* Badges for Review and Preprint */
+.badge-review,
+.badge-preprint {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.badge-review {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.badge-preprint {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.status-review {
+    border-left: 5px solid #ffc107;
+    /* Warning yellow for review */
+}
+
+.status-preprint {
+    border-left: 5px solid #17a2b8;
+    /* Cyan for preprint */
+}
+
+/* Recent Updates Section */
+.update-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.update-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    line-height: 1.6;
+}
+
+.update-list li:last-child {
+    border-bottom: none;
+}
+
+.update-list strong {
+    color: #3776AB;
+    /* Matches the theme we used for publications */
+}
+
+hr {
+    border: 0;
+    border-top: 1px double #ddd;
+    margin: 20px 0;
+}
