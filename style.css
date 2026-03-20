@@ -103,48 +103,6 @@ nav ul li a {
     }
 }
 
-/* Header and Navigation Bar */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: #4A47A3; /* Vibrant blue-purple for the header */
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* More defined shadow */
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background: #413C69; /* Dark purple/blue for the navigation bar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
-}
-
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    display: block;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background: #363158; /* Even darker shade for hover effect */
-}
-
 /* Main Content */
 main {
     padding-top: 5rem;
