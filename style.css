@@ -16,6 +16,93 @@ body {
     line-height: 1.6;
 }
 
+
+
+/* --- Desktop Navigation (Default) --- */
+header {
+    background-color: #3776AB;
+    color: white;
+    padding: 1rem 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.menu-toggle {
+    display: none;
+    /* Hidden on desktop */
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* --- Mobile Navigation (Screens < 992px) --- */
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: block;
+        /* Show hamburger icon */
+    }
+
+    nav {
+        display: none;
+        /* Hide menu by default */
+        position: absolute;
+        top: 70px;
+        /* Adjust based on header height */
+        left: 0;
+        width: 100%;
+        background-color: #3776AB;
+        z-index: 1000;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav.active {
+        display: block;
+        /* Show when 'active' class is toggled */
+    }
+
+    nav ul {
+        flex-direction: column;
+        /* Stack links vertically */
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
 /* Header and Navigation Bar */
 header {
     position: sticky;

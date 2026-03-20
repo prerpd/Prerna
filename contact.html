@@ -9,20 +9,32 @@
 </head>
 <body>
     <header>
-        <h1>Prerna's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Bio</a></li>
-                <li><a href="updates.html">Recent Updates</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>Prerna's Portfolio</h1>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Bio</a></li>
+                    <li><a href="updates.html">Recent Updates</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            nav.classList.toggle('active');
+        }
+    </script>
     <main>
         <h2>Get in Touch</h2>
         <p>I am always open to discussing <strong>science</strong>, <strong>molecular simulations</strong>, or
